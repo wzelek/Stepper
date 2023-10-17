@@ -215,6 +215,11 @@ uint64_t DendoStepper::getPosition()
     return currentPos;
 }
 
+void DendoStepper::setPosition(uint64_t currentPosition)
+{
+    currentPos = currentPosition;
+}
+
 uint64_t DendoStepper::getPositionMm()
 {
     return getPosition() / ctrl.stepsPerMm;

@@ -245,6 +245,11 @@ public:
      */
     uint64_t getPosition();
 
+    /** @brief set current absolute position
+     *  @return
+     */
+    void setPosition(uint64_t currentPosition);
+
     /** @brief returns current absolute position
      *  @return current absolute postion in steps
      */
